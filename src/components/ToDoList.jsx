@@ -11,7 +11,12 @@ class ToDoList extends React.Component {
 		return (
 			<section className="main">
 				<ul className="todo-list">
-					{this.props.todos.map( (todo, i) => <ToDoItem key={todo.id} id={todo.id} isCompleted={todo.completed} text={todo.title} destroyOne={this.props.destroyOne(i)} toggleTodo={this.props.toggleTodo(i)}/> )}
+					{this.props.todos.map( (todo, i) => <ToDoItem key={todo.id} 
+																id={todo.id} 
+																isCompleted={todo.completed} 
+																text={todo.title} 
+																destroyOne={this.props.destroyOne(i)} 
+																toggleTodo={this.props.toggleTodo(i)}/> )}
 				</ul>
 			</section>
 
